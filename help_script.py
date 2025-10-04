@@ -1,9 +1,10 @@
 import sys
+import help_script_message
 
 def help_script():
-    print("--help script feature is under development. To be released soon!")
+    print(help_script_message.help_message)
     
 if "--help" in sys.argv:
     help_script();
 else:
-    print("--help flag is missing")    
+    print(help_script_message.help_invalid_message)    
